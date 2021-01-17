@@ -5,7 +5,7 @@ import './App.css';
 
 // initialize ga
 ReactGA.initialize('UA-125401051-1');
-ReactGA.pageview(window.location.pathname + '/home');
+ReactGA.pageview(window.location.pathname + '/');
 
 function App() {
   // state of current page

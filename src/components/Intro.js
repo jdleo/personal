@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 export default function Intro() {
   // component did mount
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + '/intro');
-  });
+    ReactGA.event({ category: 'Navigation', action: 'Loaded Intro' });
+  }, []);
 
   return (
     <div>
