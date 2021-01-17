@@ -1,4 +1,6 @@
 import ReactGA from 'react-ga';
+import { Icon } from 'react-fa';
+import { Segment, Intro } from './components';
 import './App.css';
 
 // initialize ga
@@ -9,11 +11,8 @@ function App() {
   return (
     <div className="App">
       <header style={styles.h1}>John Leonardo</header>
-      <p style={styles.paragraph}>Hey there 👋 </p>
-      <p style={styles.paragraph}>
-        This website is currently under construction. If you need to reach out, you can reach me at{' '}
-        <a href="mailto:hi@jdleo.me">hi@jdleo.me</a>
-      </p>
+      <Segment />
+      <Intro />
     </div>
   );
 }
@@ -21,14 +20,9 @@ function App() {
 const styles = {
   h1: {
     fontFamily: "'Fraunces', serif",
-    fontWeight: 600,
+    fontWeight: 700,
     fontSize: 60,
-    color: '#fff',
-  },
-  paragraph: {
-    fontFamily: "'Roboto', sans-serif",
-    fontSize: 20,
-    color: '#fff',
+    color: '#0F216B',
   },
 };
 
