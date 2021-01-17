@@ -18,10 +18,12 @@ const styles = {
     fontFamily: "'Fraunces', serif",
     fontWeight: 600,
     fontSize: 60,
+    color: '#fff',
   },
   paragraph: {
     fontFamily: "'Roboto', sans-serif",
     fontSize: 20,
+    color: '#fff',
   },
 };
 
