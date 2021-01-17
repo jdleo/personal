@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import ReactGA from 'react-ga';
 import { Icon } from 'react-fa';
 import { Segment, Intro } from './components';
@@ -8,11 +9,23 @@ ReactGA.initialize('UA-125401051-1');
 ReactGA.pageview(window.location.pathname + '/home');
 
 function App() {
+  // state of current page
+  const [currentPage, setCurrentPage] = useState('Hi');
+
+  // mappings from pages to components
+  const pages = {
+    Hi: <Intro />,
+    Tech: <Intro />,
+    Projects: <Intro />,
+    Ideas: <Intro />,
+    Fun: <Intro />,
+  };
+
   return (
     <div className="App">
       <header style={styles.h1}>John Leonardo</header>
-      <Segment />
-      <Intro />
+      <Segment setCurrentPage={setCurrentPage} />
+      {pages[currentPage]}
     </div>
   );
 }

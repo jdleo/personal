@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Segment() {
+export default function Segment(props) {
   // to hold page names
   const pages = ['Hi', 'Tech', 'Projects', 'Ideas', 'Fun'];
 
@@ -12,7 +12,10 @@ export default function Segment() {
       {pages.map((page, i) => (
         <div
           key={`${i}`}
-          onClick={() => setSelectedPage(page)}
+          onClick={() => {
+            setSelectedPage(page);
+            props.setCurrentPage(page);
+          }}
           style={{
             ...styles.block,
             ...(page === selectedPage
