@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header style={styles.h1}>John Leonardo</header>
+      <p style={styles.paragraph}>Hey there 👋 </p>
+      <p style={styles.paragraph}>
+        This website is currently under construction. If you need to reach out, you can reach me at{' '}
+        <a href="mailto:hi@jdleo.me">hi@jdleo.me</a>
+      </p>
     </div>
   );
 }
+
+const styles = {
+  h1: {
+    fontFamily: "'Fraunces', serif",
+    fontWeight: 600,
+    fontSize: 60,
+  },
+  paragraph: {
+    fontFamily: "'Roboto', sans-serif",
+    fontSize: 20,
+  },
+};
 
 export default App;
