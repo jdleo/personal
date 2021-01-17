@@ -22,9 +22,12 @@ function App() {
 
   return (
     <div className="App">
-      <header style={styles.h1}>John Leonardo</header>
+      <header style={{ ...styles.h1, fontSize: window.innerWidth > 450 ? 60 : 30 }}>John Leonardo</header>
       <Segment setCurrentPage={setCurrentPage} />
       {pages[currentPage]}
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
@@ -33,7 +36,7 @@ const styles = {
   h1: {
     fontFamily: "'Fraunces', serif",
     fontWeight: 700,
-    fontSize: 60,
+    fontSize: 30,
     color: '#0F216B',
   },
 };

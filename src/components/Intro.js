@@ -21,11 +21,13 @@ export default function Intro() {
       </p>
       <br />
       <br />
-      <a href="mailto:hi@jdleo.me" style={styles.spanAnchor}>
-        <span style={styles.span}>
-          Say hello <Icon style={styles.icon} name="arrow-right" />
-        </span>
-      </a>
+      <div style={styles.anchorContainer}>
+        <a href="mailto:hi@jdleo.me" style={styles.spanAnchor}>
+          <span style={styles.span}>
+            Say hello <Icon style={styles.icon} name="arrow-right" />
+          </span>
+        </a>
+      </div>
     </div>
   );
 }
