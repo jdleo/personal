@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import ReactGA from 'react-ga';
-import { Icon } from 'react-fa';
 import { Segment, Intro } from './components';
 import './App.css';
 
