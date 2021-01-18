@@ -71,7 +71,7 @@ export default function Tech() {
       {items.map((item, i) => (
         <div style={styles.itemContainer} key={`${i}`}>
           <div style={styles.imageContainer}>
-            <img src={item.image} style={styles.thumbnail} />
+            <img src={item.image} style={styles.thumbnail} alt="thumbnail" />
           </div>
           <div style={styles.attributeContainer}>
             <div style={styles.textContainer}>
