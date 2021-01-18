@@ -9,7 +9,7 @@ import casper from '../assets/casper.gif';
 import garlicoin from '../assets/garlicoin.png';
 import ghost from '../assets/ghost.jpg';
 
-export default function Tech() {
+export default function Projects() {
   // component did mount
   useEffect(() => {
     ReactGA.event({ category: 'Navigation', action: 'Loaded Projects' });
