@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ReactGA from 'react-ga';
-import { Segment, Intro, Tech } from './components';
+import { Segment, Intro, Tech, Projects } from './components';
 import './App.css';
 
 // initialize ga
@@ -15,7 +15,7 @@ function App() {
   const pages = {
     Hi: <Intro />,
     Tech: <Tech />,
-    Projects: <Intro />,
+    Projects: <Projects />,
     Ideas: <Intro />,
     Fun: <Intro />,
   };
