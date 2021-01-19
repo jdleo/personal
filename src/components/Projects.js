@@ -82,7 +82,13 @@ export default function Projects() {
                   {stat}
                 </span>
               ))}
-              .
+              <div style={styles.anchorContainer}>
+                <a href={item.url} style={styles.spanAnchor}>
+                  <span style={styles.span}>
+                    {item.action} <Icon style={styles.icon} name="arrow-right" />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

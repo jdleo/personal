@@ -49,7 +49,7 @@ export default function Fun() {
         <div style={styles.anchorContainer}>
           <a href={'https://jdleo.me'} style={styles.spanAnchor} onClick={e => handleLike(e)}>
             <span style={styles.span}>
-              <Icon style={styles.icon} name="heart" /> {likes.toLocaleString()}
+              <Icon style={styles.icon} name="heart" /> {likes === 0 ? 'loading...' : likes.toLocaleString()}
             </span>
           </a>
         </div>
