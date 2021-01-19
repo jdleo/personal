@@ -8,6 +8,7 @@ export default function Fun() {
   // state mgmt
   const [textToHash, setTextToHash] = useState('');
   const [likes, setLikes] = useState(0);
+  const [clicked, setClicked] = useState(false);
 
   // component did mount
   useEffect(() => {
@@ -24,7 +25,13 @@ export default function Fun() {
 
   // for handling like
   const handleLike = e => {
+    // prevent default
     e.preventDefault();
+
+    if (clicked) return;
+
+    // flag click
+    setClicked(true);
 
     // increment on api
     countapi
@@ -34,8 +41,12 @@ export default function Fun() {
 
     // increment in state
     setLikes(likes + 1);
-  };
 
+    setTimeout(() => {
+      // flag click
+      setClicked(false);
+    }, 300);
+  };
   // hashing algorithms to use
   const hashes = ['sha1', 'sha224', 'sha256', 'rmd160', 'md5'];
 
@@ -44,9 +55,11 @@ export default function Fun() {
       <div style={styles.itemContainer}>
         <header style={styles.itemHeader}>Like this page?</header>
         <br />
-        <p style={styles.itemParagraph}>These likes are real. Hit the button to show some love ❤️</p>
+        <p style={styles.itemParagraph}>
+          These likes are real. Hit the button (as much as you want) to show some love ❤️
+        </p>
         <br />
-        <div style={styles.anchorContainer}>
+        <div style={styles.anchorContainer} id={clicked ? 'pop' : ''}>
           <a href={'https://jdleo.me'} style={styles.spanAnchor} onClick={e => handleLike(e)}>
             <span style={styles.span}>
               <Icon style={styles.icon} name="heart" /> {likes === 0 ? 'loading...' : likes.toLocaleString()}

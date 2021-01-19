@@ -8,3 +8,13 @@
 a {
   color: #275dad;
 }
+
+#pop {
+  animation: pop 0.3s linear 1;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.4);
+  }
+}
