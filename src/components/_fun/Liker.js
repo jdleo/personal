@@ -1,5 +1,6 @@
 import { Icon } from 'react-fa';
 import { useEffect, useState } from 'react';
+import ReactGA from 'react-ga';
 import countapi from 'countapi-js';
 import styles from './styles';
 
@@ -30,6 +31,9 @@ export default function Liker() {
     // flag click
     setClicked(true);
 
+    // log like event
+    ReactGA.event({ category: 'Interaction', action: 'Liked page' });
+
     // increment on api
     countapi
       .hit('jdleo.me', 'likes')
@@ -44,6 +48,7 @@ export default function Liker() {
       setClicked(false);
     }, 300);
   };
+
   return (
     <div style={styles.itemContainer}>
       <header style={styles.itemHeader}>Like this page?</header>
