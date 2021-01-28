@@ -32,7 +32,7 @@ export default function Liker() {
     setClicked(true);
 
     // log like event
-    ReactGA.event({ category: 'Interaction', action: 'Liked page' });
+    ReactGA.event({ category: 'Interaction', action: 'Liked' });
 
     // increment on api
     countapi
