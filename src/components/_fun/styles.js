@@ -73,6 +73,38 @@ const styles = {
   icon: {
     marginRight: 10,
   },
+  balanceIcon: {
+    marginRight: 10,
+  },
+  balanceSpan: {
+    backgroundColor: '#aaffaa',
+    color: '#050505',
+    padding: 16,
+    borderRadius: 8,
+    fontFamily: "'Roboto', sans-serif",
+    fontWeight: 500,
+    fontSize: 28,
+  },
+  colorBlock: {
+    display: 'inline-block',
+    height: 50,
+    width: 50,
+    margin: 10,
+    borderRadius: 8,
+    cursor: 'pointer',
+  },
+  colorRoll: {
+    paddingTop: 16,
+    paddingBottom: 16,
+    paddingLeft: 70,
+    paddingRight: 70,
+    fontFamily: "'Roboto', sans-serif",
+    fontWeight: 500,
+    color: '#fff',
+    borderRadius: 8,
+    marginTop: 16,
+    width: 100,
+  },
 };
 
 export default styles;
