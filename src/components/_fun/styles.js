@@ -1,0 +1,78 @@
+const styles = {
+  paragraph: {
+    fontFamily: "'Roboto', sans-serif",
+    fontSize: 20,
+    color: '#0F216B',
+  },
+  input: {
+    borderRadius: 8,
+    border: '2px solid #0F216B',
+    overflow: 'hidden',
+    padding: 12,
+    fontFamily: "'Roboto', sans-serif",
+    color: '#0F216B',
+    textAlign: 'center',
+    fontWeight: 500,
+    fontSize: 18,
+    boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.16)',
+  },
+  codeBlock: {
+    borderRadius: 8,
+    overflow: 'hidden',
+    padding: 12,
+    fontFamily: "'Roboto', sans-serif",
+    color: '#fff',
+    textAlign: 'center',
+    fontWeight: 500,
+    fontSize: window.innerWidth > 450 ? 12 : 10,
+    backgroundColor: '#050505',
+    boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.16)',
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  itemContainer: {
+    padding: '21px 30px',
+    boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.12)',
+    borderRadius: 8,
+    marginTop: 26,
+  },
+  itemHeader: { fontFamily: "'Fraunces', serif", fontWeight: 600, fontSize: 26, color: '#0F216B' },
+  itemBubble: {
+    backgroundColor: '#aaffaa',
+    color: '#050505',
+    padding: 8,
+    margin: 6,
+    borderRadius: 8,
+    fontFamily: "'Roboto', sans-serif",
+    fontSize: 12,
+    fontWeight: 500,
+    display: 'inline-block',
+  },
+  itemParagraph: {
+    fontFamily: "'Roboto', sans-serif",
+    fontSize: 14,
+    color: '#0F216B',
+  },
+  spanAnchor: {
+    textDecoration: 'none',
+  },
+  anchorContainer: {
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  span: {
+    backgroundColor: '#DA667B',
+    color: '#fff',
+    fontFamily: "'Roboto', sans-serif",
+    fontWeight: 500,
+    fontSize: 18,
+    padding: '21px 30px',
+    borderRadius: 8,
+    boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.33)',
+  },
+  icon: {
+    marginRight: 10,
+  },
+};
+
+export default styles;
