@@ -146,6 +146,31 @@ const styles = {
     color: '#0F216B',
     fontWeight: 500,
   },
+  algoLabel: { fontFamily: "'Roboto', sans-serif", color: '#0F216B', fontWeight: 500 },
+  algoSelect: {
+    border: '2px solid #0F216B',
+    fontFamily: "'Roboto', sans-serif",
+    color: '#0F216B',
+    fontWeight: 500,
+    borderRadius: 8,
+    appearance: 'none',
+    backgroundColor: 'transparent',
+    paddingLeft: 6,
+    paddingRight: 6,
+    paddingTop: 10,
+    paddingBottom: 8,
+    textAlign: 'center',
+    margin: 0,
+    cursor: 'pointer',
+    lineHeight: 'inherit',
+  },
+  colorCell: {
+    display: 'inline-block',
+    height: 20,
+    width: 20,
+    borderRadius: 4,
+    margin: 2,
+  },
 };
 
 export default styles;
