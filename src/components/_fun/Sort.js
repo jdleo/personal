@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import styles from './styles';
 
 export default function Sort() {
@@ -166,7 +167,12 @@ export default function Sort() {
         </select>
       </form>
       <br />
-      <button style={styles.betButton} onClick={() => !sorting && algos[selectedAlgo]()}>
+      <button
+        style={styles.betButton}
+        onClick={() =>
+          !sorting && ReactGA.event({ category: 'Interaction', action: `${selectedAlgo}` }) && algos[selectedAlgo]()
+        }
+      >
         Sort
       </button>
       <br />
