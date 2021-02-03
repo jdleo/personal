@@ -1,5 +1,6 @@
 import ReactGA from 'react-ga';
-import { Icon } from 'react-fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 
 export default function Intro() {
@@ -24,7 +25,7 @@ export default function Intro() {
       <div style={styles.anchorContainer}>
         <a href="mailto:hi@jdleo.me" style={styles.spanAnchor}>
           <span style={styles.span}>
-            Say hello <Icon style={styles.icon} name="arrow-right" />
+            Say hello <FontAwesomeIcon style={styles.icon} icon={faArrowRight} />
           </span>
         </a>
       </div>

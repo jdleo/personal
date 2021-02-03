@@ -70,6 +70,16 @@ const styles = {
     borderRadius: 8,
     boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.33)',
   },
+  hateSpan: {
+    backgroundColor: '#BA000D',
+    color: '#fff',
+    fontFamily: "'Roboto', sans-serif",
+    fontWeight: 500,
+    fontSize: 18,
+    padding: '21px 30px',
+    borderRadius: 8,
+    boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.33)',
+  },
   icon: {
     marginRight: 10,
   },

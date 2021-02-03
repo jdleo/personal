@@ -1,4 +1,5 @@
-import { Icon } from 'react-fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
 import countapi from 'countapi-js';
@@ -60,7 +61,7 @@ export default function Liker() {
       <div style={styles.anchorContainer} id={clicked ? 'pop' : ''}>
         <a href={'https://jdleo.me'} style={styles.spanAnchor} onClick={e => handleLike(e)}>
           <span style={styles.span}>
-            <Icon style={styles.icon} name="heart" /> {likes === 0 ? 'loading...' : likes.toLocaleString()}
+            <FontAwesomeIcon style={styles.icon} icon={faHeart} /> {likes === 0 ? 'loading...' : likes.toLocaleString()}
           </span>
         </a>
       </div>

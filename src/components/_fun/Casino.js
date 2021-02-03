@@ -1,4 +1,5 @@
-import { Icon } from 'react-fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoins } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import ReactGA from 'react-ga';
 import styles from './styles';
@@ -102,7 +103,7 @@ export default function Casino() {
       </p>
       <br />
       <span style={styles.balanceSpan}>
-        <Icon style={styles.balanceIcon} name="university" />{' '}
+        <FontAwesomeIcon style={styles.balanceIcon} icon={faCoins} />{' '}
         {balance.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
       </span>
       {breaks(4)}

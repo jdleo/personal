@@ -1,5 +1,6 @@
 import ReactGA from 'react-ga';
-import { Icon } from 'react-fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 
 export default function Tech() {
@@ -48,7 +49,7 @@ export default function Tech() {
       <div style={styles.anchorContainer}>
         <a href="https://github.com/jdleo" style={styles.spanAnchor}>
           <span style={styles.span}>
-            Github <Icon style={styles.icon} name="arrow-right" />
+            Github <FontAwesomeIcon style={styles.icon} icon={faArrowRight} />
           </span>
         </a>
       </div>

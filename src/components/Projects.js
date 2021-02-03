@@ -1,5 +1,6 @@
 import ReactGA from 'react-ga';
-import { Icon } from 'react-fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 
 // assets
@@ -85,7 +86,7 @@ export default function Projects() {
               <div style={styles.anchorContainer}>
                 <a href={item.url} style={styles.spanAnchor}>
                   <span style={styles.span}>
-                    {item.action} <Icon style={styles.icon} name="arrow-right" />
+                    {item.action} <FontAwesomeIcon style={styles.icon} icon={faArrowRight} />
                   </span>
                 </a>
               </div>
