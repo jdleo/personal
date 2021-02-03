@@ -2,7 +2,7 @@ import ReactGA from 'react-ga';
 import { useEffect } from 'react';
 
 // fun components
-import { Liker, Hash, Casino, Sort } from './_fun';
+import { Liker, Hash, Casino, Sort, Hater } from './_fun';
 
 export default function Fun() {
   // component did mount
@@ -16,6 +16,7 @@ export default function Fun() {
       <Sort />
       <Casino />
       <Hash />
+      <Hater />
     </div>
   );
 }
