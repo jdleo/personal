@@ -169,9 +169,12 @@ export default function Sort() {
       <br />
       <button
         style={styles.betButton}
-        onClick={() =>
-          !sorting && ReactGA.event({ category: 'Interaction', action: `${selectedAlgo}` }) && algos[selectedAlgo]()
-        }
+        onClick={() => {
+          if (!sorting) {
+            algos[selectedAlgo]();
+            ReactGA.event({ category: 'Interaction', action: `${selectedAlgo}` });
+          }
+        }}
       >
         Sort
       </button>
