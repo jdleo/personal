@@ -9,6 +9,8 @@ import reach from '../assets/reach.gif';
 import casper from '../assets/casper.gif';
 import garlicoin from '../assets/garlicoin.png';
 import ghost from '../assets/ghost.jpg';
+import lite from '../assets/lite.png';
+import reachv2 from '../assets/reachv2.gif';
 
 export default function Projects() {
   // component did mount
@@ -18,6 +20,24 @@ export default function Projects() {
 
   // items for projects
   const items = [
+    {
+      title: 'Lite.fyi',
+      description:
+        'A very micro link shortener, that does exactly what it says (shortens links, duh). All of the clutter taken away.',
+      image: lite,
+      stats: ['react', 'javascript', 'netlify'],
+      action: 'lite.fyi',
+      url: 'https://lite.fyi',
+    },
+    {
+      title: 'Reach v2',
+      description:
+        "A matchmaker between creators and brands with an elegant approach to brand deals. We've focused on keeping the process simple. Brands set the performance metrics, creators swipe through a curated stack of offers, and boom– it's time to get paid.",
+      image: reachv2,
+      stats: ['react', 'react native', 'typescript', 'google cloud', 'express'],
+      action: 'Producthunt',
+      url: 'https://www.producthunt.com/posts/reach-9',
+    },
     {
       title: 'Spark',
       description:
@@ -84,7 +104,7 @@ export default function Projects() {
                 </span>
               ))}
               <div style={styles.anchorContainer}>
-                <a href={item.url} style={styles.spanAnchor}>
+                <a href={item.url} style={styles.spanAnchor} target="_blank">
                   <span style={styles.span}>
                     {item.action} <FontAwesomeIcon style={styles.icon} icon={faArrowRight} />
                   </span>
