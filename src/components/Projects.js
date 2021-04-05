@@ -104,7 +104,7 @@ export default function Projects() {
                 </span>
               ))}
               <div style={styles.anchorContainer}>
-                <a href={item.url} style={styles.spanAnchor} target="_blank">
+                <a href={item.url} style={styles.spanAnchor} target="_blank" rel="noreferrer">
                   <span style={styles.span}>
                     {item.action} <FontAwesomeIcon style={styles.icon} icon={faArrowRight} />
                   </span>
