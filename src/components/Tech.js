@@ -17,6 +17,7 @@ export default function Tech() {
       name: 'Python',
       tags: ['flask', 'django', 'algorithms', 'data structures', 'tensorflow', 'pillows', 'numpy', 'SQL'],
     },
+    { name: 'Go', tags: ['open source', 'microservices', 'mux', 'protobufs', 'networking'] },
     { name: 'Swift', tags: ['UIKit', 'swiftUI', 'alamofire', 'snapkit', 'kingfisher'] },
     { name: 'Java', tags: ['springboot', 'maven', 'algorithms', 'data structures', 'rest controller'] },
     { name: 'Docker', tags: ['continuous deployment', 'dockerfile', 'managed auth injection', 'networking'] },
