@@ -13,8 +13,9 @@ export default function Intro() {
     <div>
       <p style={styles.paragraph}>
         Hey there, 👋. Thanks for visiting. <br />
-        <br /> I'm currently a Software Engineer at <a href="https://ibm.com">IBM</a> building out modern cloud
-        infrastructure with iX. <br />
+        <br /> I'm currently a Full-Stack Software Engineer at <a href="https://ibm.com">IBM</a> building out complex,
+        distributed systems and microservices with iX.
+        <br />
         <br /> My favorite programming language is Typescript, favorite baseball team is the Mariners, and favorite new
         music artist is Clairo. <br />
         <br />
