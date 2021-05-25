@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngry } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 import ReactGA from 'react-ga';
-import countapi from 'countapi-js';
 import styles from './styles';
 
 export default function Hater() {
@@ -10,15 +10,16 @@ export default function Hater() {
   const [hates, setHates] = useState(0);
   const [clicked, setClicked] = useState(false);
 
+  // url for api
+  const api_url = 'https://us-central1-jdleo-api.cloudfunctions.net/api/hates';
+
   // component did mount
   useEffect(
     () =>
-      countapi
-        .get('jdleo.me', 'hates')
-        .then(result => {
-          setHates(result.value);
-        })
-        .catch(() => {}),
+      axios.get(api_url).then(res => {
+        // set likes from response
+        setHates(res.data.count);
+      }),
     []
   );
 
@@ -35,8 +36,8 @@ export default function Hater() {
     // log like event
     ReactGA.event({ category: 'Interaction', action: 'Hated' });
 
-    // increment on api
-    countapi.hit('jdleo.me', 'hates').finally(() => {});
+    // send put request to api
+    axios.put(api_url);
 
     // increment in state
     setHates(hates + 1);

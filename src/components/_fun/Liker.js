@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
-import countapi from 'countapi-js';
+import axios from 'axios';
 import styles from './styles';
 
 export default function Liker() {
@@ -10,15 +10,16 @@ export default function Liker() {
   const [likes, setLikes] = useState(0);
   const [clicked, setClicked] = useState(false);
 
+  // url for api
+  const api_url = 'https://us-central1-jdleo-api.cloudfunctions.net/api/likes';
+
   // component did mount
   useEffect(
     () =>
-      countapi
-        .get('jdleo.me', 'likes')
-        .then(result => {
-          setLikes(result.value);
-        })
-        .catch(() => {}),
+      axios.get(api_url).then(res => {
+        // set likes from response
+        setLikes(res.data.count);
+      }),
     []
   );
 
@@ -35,11 +36,8 @@ export default function Liker() {
     // log like event
     ReactGA.event({ category: 'Interaction', action: 'Liked' });
 
-    // increment on api
-    countapi
-      .hit('jdleo.me', 'likes')
-      .then(() => {})
-      .catch(() => {});
+    // send put request to api
+    axios.put(api_url);
 
     // increment in state
     setLikes(likes + 1);
