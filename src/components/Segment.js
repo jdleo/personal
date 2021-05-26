@@ -1,11 +1,9 @@
 import { useState } from 'react';
+import cookie from 'react-cookies';
 
 export default function Segment(props) {
   // to hold page names
   const pages = ['Hi', 'Tech', 'Projects', 'Ideas', 'Fun'];
-
-  // state mgmt
-  const [selectedPage, setSelectedPage] = useState('Hi');
 
   return (
     <div style={styles.container}>
@@ -13,12 +11,12 @@ export default function Segment(props) {
         <div
           key={`${i}`}
           onClick={() => {
-            setSelectedPage(page);
+            cookie.save('currentPage', page);
             props.setCurrentPage(page);
           }}
           style={{
             ...styles.block,
-            ...(page === selectedPage
+            ...(page === props.currentPage
               ? { backgroundColor: '#000000', color: '#f9f9f9' }
               : { backgroundColor: '#f9f9f9', color: '#000000' }),
           }}
