@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import cookie from 'react-cookies';
 
 export default function Segment(props) {
