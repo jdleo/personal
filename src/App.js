@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ReactGA from 'react-ga';
 import Gradient from 'rgt';
+import cookie from 'react-cookies';
 import { Segment, Intro, Tech, Projects, Ideas, Fun } from './components';
 import './App.css';
 
@@ -21,6 +22,17 @@ function App() {
     Fun: <Fun />,
   };
 
+  // get initial page
+  const initialPage = cookie.load('currentPage');
+
+  // component did mount
+  useEffect(() => {
+    // check if current page in cookies
+    if (initialPage) {
+      setCurrentPage(initialPage);
+    }
+  }, []);
+
   return (
     <div className="App">
       <header style={{ ...styles.h1, fontSize: window.innerWidth > 450 ? 60 : 30 }}>
@@ -31,8 +43,8 @@ function App() {
           Leonardo
         </Gradient>
       </header>
-      <Segment setCurrentPage={setCurrentPage} />
-      {pages[currentPage]}
+      <Segment setCurrentPage={setCurrentPage} currentPage={initialPage ? initialPage : currentPage} />
+      {initialPage ? pages[initialPage] : pages[currentPage]}
       <br />
       <br />
       <br />

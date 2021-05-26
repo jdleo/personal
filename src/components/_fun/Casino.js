@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoins } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import cookie from 'react-cookies';
 import ReactGA from 'react-ga';
 import styles from './styles';
 
 export default function Casino() {
   // state mgmt
-  const [balance, setBalance] = useState(1000.0);
+  const [balance, setBalance] = useState(1_000.0);
   const [selectedColors, setSelectedColors] = useState([]);
   const [lastRoll, setLastRoll] = useState('');
   const [betText, setBetText] = useState('');
@@ -67,6 +68,8 @@ export default function Casino() {
               }
               // set new balance
               setBalance(newBalance);
+              // set balance in cookies
+              cookie.save('b', newBalance.toString(0x23));
               // set last roll
               setLastRoll(roll);
             } else {
@@ -92,6 +95,14 @@ export default function Casino() {
       .fill(0)
       .map((_, i) => <br key={`${i}`} />);
   };
+
+  // component did mount
+  useEffect(() => {
+    if (cookie.load('b')) {
+      // load balance
+      setBalance(parseInt(cookie.load('b'), 0x23));
+    }
+  }, []);
 
   return (
     <div style={styles.itemContainer}>
