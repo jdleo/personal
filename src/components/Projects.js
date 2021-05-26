@@ -25,7 +25,7 @@ export default function Projects() {
       description:
         'A very micro link shortener, that does exactly what it says (shortens links, duh). All of the clutter taken away.',
       image: lite,
-      stats: ['react', 'javascript', 'netlify'],
+      stats: ['react', 'javascript', 'netlify', 'firestore'],
       action: 'lite.fyi',
       url: 'https://lite.fyi',
     },
@@ -151,7 +151,7 @@ const styles = {
   },
   itemParagraph: {
     fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-    fontSize: 14,
+    fontSize: 16,
     color: '#080808',
   },
   itemBubble: {

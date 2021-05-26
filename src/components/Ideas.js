@@ -97,7 +97,7 @@ const styles = {
   },
   itemParagraph: {
     fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-    fontSize: 14,
+    fontSize: 16,
     color: '#080808',
   },
   spanAnchor: {
