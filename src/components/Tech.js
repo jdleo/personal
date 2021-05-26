@@ -93,7 +93,7 @@ const styles = {
   span: {
     backgroundColor: '#f9f9f9',
     color: '#000000',
-    fontFamily: "'Roboto', sans-serif",
+    fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
     fontWeight: 800,
     fontSize: 18,
     padding: '21px 30px',
