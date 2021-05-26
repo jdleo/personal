@@ -68,32 +68,37 @@ export default function Ideas() {
 
 const styles = {
   paragraph: {
-    fontFamily: "'Roboto', sans-serif",
+    fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
     fontSize: 20,
-    color: '#0F216B',
+    color: '#adadad',
   },
   itemContainer: {
     padding: '21px 30px',
-    boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.12)',
+    backgroundColor: '#f9f9f9',
     borderRadius: 8,
     marginTop: 26,
   },
-  itemHeader: { fontFamily: "'Fraunces', serif", fontWeight: 600, fontSize: 26, color: '#0F216B' },
+  itemHeader: {
+    fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+    fontWeight: 700,
+    fontSize: 26,
+    color: '#000000',
+  },
   itemBubble: {
-    backgroundColor: '#aaffaa',
-    color: '#050505',
+    backgroundColor: '#000000',
+    color: '#f9f9f9',
     padding: 8,
     margin: 6,
     borderRadius: 8,
-    fontFamily: "'Roboto', sans-serif",
+    fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
     fontSize: 12,
     fontWeight: 500,
     display: 'inline-block',
   },
   itemParagraph: {
-    fontFamily: "'Roboto', sans-serif",
+    fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
     fontSize: 14,
-    color: '#0F216B',
+    color: '#080808',
   },
   spanAnchor: {
     textDecoration: 'none',
