@@ -9468,6 +9468,11 @@ rgba-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/rgba-regex/-/rgba-regex-1.0.0.tgz#43374e2e2ca0968b0ef1523460b7d730ff22eeb3"
   integrity sha1-QzdOLiyglosO8VI0YLfXMP8i7rM=
 
+rgt@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/rgt/-/rgt-1.0.7.tgz#52a133850fc2c903f45b052a86373adcfbe6413d"
+  integrity sha512-ZviNzOf7HgVSnU0PRRoO9IKCD+7TSFLdy8Q7nFCaFYRY0ei6AfsjM4VOHxI5TsiOSEVculIyZSiTO26ivtkZ4g==
+
 rimraf@2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"

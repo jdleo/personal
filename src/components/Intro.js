@@ -36,22 +36,21 @@ export default function Intro() {
 
 const styles = {
   paragraph: {
-    fontFamily: "'Roboto', sans-serif",
-    fontSize: 20,
-    color: '#0F216B',
+    fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+    fontSize: '1.3rem',
+    color: '#adadad',
   },
   spanAnchor: {
     textDecoration: 'none',
   },
   span: {
-    backgroundColor: '#0F216B',
-    color: '#fff',
-    fontFamily: "'Roboto', sans-serif",
-    fontWeight: 500,
+    backgroundColor: '#f9f9f9',
+    color: '#000000',
+    fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+    fontWeight: 800,
     fontSize: 18,
     padding: '21px 30px',
     borderRadius: 8,
-    boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.33)',
   },
   icon: {
     marginLeft: 8,

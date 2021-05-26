@@ -19,8 +19,8 @@ export default function Segment(props) {
           style={{
             ...styles.block,
             ...(page === selectedPage
-              ? { backgroundColor: '#0F216B', color: '#fff' }
-              : { backgroundColor: '#fff', color: '#0F216B' }),
+              ? { backgroundColor: '#000000', color: '#f9f9f9' }
+              : { backgroundColor: '#f9f9f9', color: '#000000' }),
           }}
         >
           {page}
@@ -33,21 +33,22 @@ export default function Segment(props) {
 const styles = {
   container: {
     borderRadius: 8,
-    border: '2px solid #0F216B',
     marginBottom: 50,
     marginTop: 20,
     display: 'flex',
     height: 45,
     overflow: 'hidden',
-    fontFamily: "'Roboto', sans-serif",
-    fontWeight: 500,
+    fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+    padding: 6,
+    backgroundColor: '#f9f9f9',
+    fontWeight: 600,
     cursor: 'pointer',
-    boxShadow: '5px 5px 35px 5px rgba(0,0,0,0.16)',
   },
   block: {
     flexGrow: 1,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 8,
   },
 };
