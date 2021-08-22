@@ -11,6 +11,7 @@ import garlicoin from '../assets/garlicoin.png';
 import ghost from '../assets/ghost.jpg';
 import lite from '../assets/lite.png';
 import reachv2 from '../assets/reachv2.gif';
+import golang from '../assets/golang.png';
 
 export default function Projects() {
   // component did mount
@@ -20,6 +21,15 @@ export default function Projects() {
 
   // items for projects
   const items = [
+    {
+      title: 'go-idgen',
+      description:
+        'A cryptographically-secure, URL-safe by default, random ID generator as a Go package. Blazing fast, generates nano IDs in nanoseconds.',
+      image: golang,
+      stats: ['go'],
+      action: 'Github',
+      url: 'https://github.com/jdleo/go-idgen',
+    },
     {
       title: 'Lite.fyi',
       description:
@@ -81,8 +91,7 @@ export default function Projects() {
       image: ghost,
       stats: ['Swift', 'Firebase', 'Geofire'],
       action: 'Google',
-      url:
-        'https://www.google.com/search?q=ghost+anonymous+social+feed&source=lmns&client=firefox-b-1-d&hl=en&sa=X&ved=2ahUKEwiswZrztKTuAhVLRawKHUnDD_oQ_AUoAHoECAEQAA',
+      url: 'https://www.google.com/search?q=ghost+anonymous+social+feed&source=lmns&client=firefox-b-1-d&hl=en&sa=X&ved=2ahUKEwiswZrztKTuAhVLRawKHUnDD_oQ_AUoAHoECAEQAA',
     },
   ];
 
