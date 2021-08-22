@@ -14,7 +14,8 @@ export default function Intro() {
       <p style={styles.paragraph}>
         Hey there, 👋. Thanks for visiting. <br />
         <br /> I'm currently a Full-Stack Software Engineer at <a href="https://ibm.com">IBM</a> building out complex,
-        distributed systems and microservices with iX.
+        distributed systems and microservices with iX. I'll soon be joining <a href="https://amazon.com">Amazon</a> for
+        a Software Engineer II role in Seattle.
         <br />
         <br /> My favorite programming languages are Go and Typescript, favorite baseball team is the Mariners, and
         favorite new music artist is Clairo. <br />
