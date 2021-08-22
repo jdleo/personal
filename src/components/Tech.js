@@ -33,7 +33,7 @@ export default function Tech() {
 
   return (
     <div>
-      <p style={styles.paragraph}>The following a list of different technologies I'm familiar with.</p>
+      <p style={styles.paragraph}>The following is a list of different technologies I'm familiar with.</p>
       {items.map((item, i) => (
         <div style={styles.itemContainer} key={`${i}`}>
           <header style={styles.itemHeader}>{item.name}</header>
