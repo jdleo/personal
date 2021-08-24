@@ -18,8 +18,7 @@ export default function Intro() {
         be joining <a href="https://amazon.com">Amazon</a> as a Software Engineer II in Seattle.
         <br />
         <br />
-        My favorite programming languages are Go and Typescript, my favorite food is Sushi (omakase is the best), and my
-        favorite movies are Risky Business, Dark Knight, Slumdog Millionaire, and Blade Runner.
+        My favorite programming languages are Go and Typescript, my favorite food is Sushi 🍣 (omakase is the best).
         <br />
         <br />
         Feel free to look around, or reach out through email below.
