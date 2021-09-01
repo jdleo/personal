@@ -13,9 +13,10 @@ export default function Intro() {
     <div>
       <p style={styles.paragraph}>
         Hey there, 👋. Thanks for visiting. <br />
-        <br /> I'm currently a <a href="https://linkedin.com/in/jdleo">Full-Stack Software Engineer</a> at{' '}
-        <a href="https://ibm.com">IBM</a> building out complex, distributed systems and microservices with iX. I'll soon
-        be joining <a href="https://amazon.com">Amazon</a> as a Software Engineer II in Seattle.
+        <br /> I'm currently a <a href="https://linkedin.com/in/jdleo">Software Engineer II</a> at{' '}
+        <a href="https://amazon.com">Amazon</a> working on scaling logistics and delivery routing with Last Mile.
+        Formerly, I worked at <a href="https://ibm.com">IBM</a> as a Software Engineer, working on distributed systems
+        and low-latency, internal microservices.
         <br />
         <br />
         My favorite programming languages are Go and Typescript, my favorite food is Sushi 🍣 (omakase is the best).
