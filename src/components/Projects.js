@@ -12,6 +12,7 @@ import ghost from '../assets/ghost.jpg';
 import lite from '../assets/lite.png';
 import reachv2 from '../assets/reachv2.gif';
 import golang from '../assets/golang.png';
+import asking from '../assets/asking.png';
 
 export default function Projects() {
   // component did mount
@@ -21,6 +22,15 @@ export default function Projects() {
 
   // items for projects
   const items = [
+    {
+      title: 'asking.one',
+      description:
+        'An open-source Strawpoll alternative, dockerized as a stack, bundled together with containerized services of React, PostgreSQL, Express.',
+      image: asking,
+      stats: ['react', 'postgresql', 'express', 'docker', 'docker-compose', 'github actions'],
+      action: 'Github',
+      url: 'http://asking.one',
+    },
     {
       title: 'go-idgen',
       description:
