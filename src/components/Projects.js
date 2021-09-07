@@ -28,7 +28,7 @@ export default function Projects() {
         'An open-source Strawpoll alternative, dockerized as a stack, bundled together with containerized services of React, PostgreSQL, Express.',
       image: asking,
       stats: ['react', 'postgresql', 'express', 'docker', 'docker-compose', 'github actions'],
-      action: 'Github',
+      action: 'asking.one',
       url: 'http://asking.one',
     },
     {
