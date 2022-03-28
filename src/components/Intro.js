@@ -14,7 +14,7 @@ export default function Intro() {
       <p style={styles.paragraph}>
         Hey there, 👋. Thanks for visiting. <br />
         <br /> I'm currently a <a href="https://linkedin.com/in/jdleo">Software Engineer II</a> at{' '}
-        <a href="https://amazon.com">Amazon</a> working on scaling logistics and delivery routing with Last Mile.
+        <a href="https://amazon.com">Amazon</a> working in Last Mile org, on UDEX team. I'm currently working on high-TPS, low-latency, event-driven distributed systems that serve as an event firehose to help scale logistics in warehouses, fulfillment centers, and for drivers en route.
         Formerly, I worked at <a href="https://ibm.com">IBM</a> as a Software Engineer, working on distributed systems
         and low-latency, internal microservices.
         <br />
