@@ -12,6 +12,7 @@ export default function Tech() {
   // different technologies and languages
   const items = [
     { name: 'Typescript', tags: ['deno', 'oak.ts', 'tslint', 'node.js', 'db models', 'mongoose', 'mongoDB', 'fuse'] },
+    { name: 'AWS', tags: ['DynamoDB', 'IAM', 'SNS/SQS', 'Timestream', 'API Gateway', 'Lambda', 'Redshift', 'CDK/CodePipelines', 'Cloudwatch'] },
     { name: 'Javascript', tags: ['express', 'react.js', 'koa', 'fastify', 'middleware', 'eslint', 'mocha', 'jest'] },
     {
       name: 'Python',
